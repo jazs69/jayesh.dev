@@ -1,0 +1,77 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Jayesh - Software Architecture & SEO Services",
+  "description": "Premium full-stack development and SEO optimization services for businesses seeking scalable digital products and organic growth.",
+  "url": "https://jayesh.dev",
+  "logo": "https://jayesh.dev/logo.png",
+  "image": "https://jayesh.dev/og-image.jpg",
+  "priceRange": "$$$",
+  "telephone": "+1-XXX-XXX-XXXX",
+  "email": "hello@jayesh.dev",
+  "areaServed": "Worldwide",
+  "serviceType": [
+    "Full-Stack Development",
+    "SEO Optimization",
+    "Software Architecture",
+    "Performance Engineering",
+    "Technical Consulting"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Software Development & SEO Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Full-Stack Development",
+          "description": "Building lightning-fast web applications with Next.js, React, Node.js, and modern frameworks"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "SEO Strategy & Implementation",
+          "description": "Data-driven optimization that turns search engines into your primary growth channel"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Performance Engineering",
+          "description": "Making your site faster than 95% of the web with Core Web Vitals optimization"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Technical Architecture",
+          "description": "Architecture audits, tech stack selection, and scalability planning for high-growth products"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "47"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Sarah Johnson"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Jayesh transformed our e-commerce platform. We went from page 5 to ranking #1 for our top keywords in just 4 months. Organic traffic increased by 312%."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jayesh",
+  "jobTitle": "Software Architect & SEO Strategist",
+  "description": "Full-stack developer specializing in scalable digital products and data-driven SEO. I help brands scale from zero to global visibility.",
+  "url": "https://jayesh.dev",
+  "image": "https://jayesh.dev/avatar.jpg",
+  "sameAs": [
+    "https://github.com/jayesh",
+    "https://linkedin.com/in/jayesh",
+    "https://twitter.com/jayesh"
+  ],
+  "knowsAbout": [
+    "Full-Stack Development",
+    "SEO Optimization",
+    "Software Architecture",
+    "Performance Engineering",
+    "Next.js",
+    "React",
+    "Node.js",
+    "MongoDB",
+    "TypeScript",
+    "Technical SEO",
+    "Web Performance",
+    "Cloud Architecture"
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Software Architect",
+    "occupationLocation": {
+      "@type": "City",
+      "name": "Remote"
+    },
+    "estimatedSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": {
+        "@type": "QuantitativeValue",
+        "minValue": "150000",
+        "maxValue": "250000",
+        "unitText": "YEAR"
+      }
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Professional Software Development & SEO Services",
+      "provider": {
+        "@type": "Person",
+        "name": "Jayesh"
+      }
+    }
+  }
+}
