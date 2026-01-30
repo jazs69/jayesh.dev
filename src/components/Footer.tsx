@@ -8,7 +8,7 @@ const socialLinks = [
   { icon: Github, href: 'https://github.com/jayesh', label: 'GitHub' },
   { icon: Linkedin, href: 'https://linkedin.com/in/jayesh', label: 'LinkedIn' },
   { icon: Twitter, href: 'https://twitter.com/jayesh', label: 'Twitter' },
-  { icon: Mail, href: 'mailto:hello@jayesh.dev', label: 'Email' },
+  { icon: Mail, href: 'mailto:jayeshy461@gmail.com', label: 'Email' },
 ];
 
 const footerLinks = [
@@ -45,11 +45,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative border-t border-purple-500/10 bg-[#0a0a0f] overflow-hidden">
+    <footer className="relative border-t border-blue-500/10 bg-[#0a0a0f] overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-500/5 to-transparent pointer-events-none" />
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-20">
         {/* Main Footer Content */}
@@ -90,7 +90,7 @@ export default function Footer() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: index * 0.1 }}
                       whileHover={{ scale: 1.1, rotate: 5 }}
-                      className="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400/50 hover:bg-purple-500/20 transition-all duration-300"
+                      className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:border-blue-400/50 hover:bg-blue-500/20 transition-all duration-300"
                       aria-label={social.label}
                     >
                       <Icon size={18} />
@@ -116,7 +116,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      className="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm"
+                      className="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm"
                     >
                       {link.name}
                     </a>
@@ -128,7 +128,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-purple-500/10">
+        <div className="pt-8 border-t border-blue-500/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <motion.p
               initial={{ opacity: 0 }}
@@ -137,7 +137,7 @@ export default function Footer() {
               className="text-gray-500 text-sm flex items-center gap-2"
             >
               © {currentYear} Jayesh. Made with{' '}
-              <Heart size={14} className="text-purple-400 inline fill-purple-400" /> and
+              <Heart size={14} className="text-blue-400 inline fill-blue-400" /> and
               caffeine.
             </motion.p>
             
@@ -147,13 +147,13 @@ export default function Footer() {
               viewport={{ once: true }}
               className="flex gap-6 text-sm text-gray-500"
             >
-              <a href="#" className="hover:text-purple-400 transition-colors">
+              <a href="#" className="hover:text-blue-400 transition-colors">
                 Terms
               </a>
-              <a href="#" className="hover:text-purple-400 transition-colors">
+              <a href="#" className="hover:text-blue-400 transition-colors">
                 Privacy
               </a>
-              <a href="#" className="hover:text-purple-400 transition-colors">
+              <a href="#" className="hover:text-blue-400 transition-colors">
                 Sitemap
               </a>
             </motion.div>

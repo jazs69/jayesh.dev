@@ -76,8 +76,8 @@ export default function Hero() {
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
           <motion.div variants={itemVariants} className="inline-flex items-center gap-2 mb-8">
-            <div className="glass px-6 py-3 rounded-full border border-accent-cyan/30 inline-flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-accent-cyan" />
+            <div className="glass px-6 py-3 rounded-full border border-blue-500/30 inline-flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-blue-400" />
               <span className="text-sm font-mono text-dark-text-secondary">
                 Available for High-Impact Projects
               </span>
@@ -92,7 +92,7 @@ export default function Hero() {
             Building{' '}
             <span className="gradient-text">Scalable Digital Products</span>
             <br />
-            That Rank <span className="text-accent-cyan">#1</span>
+            That Rank <span className="text-blue-400">#1</span>
           </motion.h1>
 
           {/* Sub-headline */}
@@ -156,12 +156,12 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="w-6 h-10 border-2 border-accent-cyan/30 rounded-full flex items-start justify-center p-2"
+              className="w-6 h-10 border-2 border-blue-500/30 rounded-full flex items-start justify-center p-2"
             >
               <motion.div
                 animate={{ y: [0, 12, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="w-1.5 h-1.5 bg-accent-cyan rounded-full"
+                className="w-1.5 h-1.5 bg-blue-400 rounded-full"
               />
             </motion.div>
           </div>

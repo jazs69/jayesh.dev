@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section-container relative">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-500/5 via-transparent to-pink-500/5 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 via-transparent to-indigo-500/5 pointer-events-none" />
 
       <motion.div
         ref={ref}
@@ -42,11 +42,11 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16 relative z-10"
       >
-        <span className="inline-block px-4 py-2 rounded-full border border-purple-500/30 text-purple-400 text-sm font-mono mb-6">
+        <span className="inline-block px-4 py-2 rounded-full border border-blue-500/30 text-blue-400 text-sm font-mono mb-6">
           GET IN TOUCH
         </span>
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-violet-500 bg-clip-text text-transparent">
             Let's Build Something
           </span>
           <br />
@@ -76,8 +76,8 @@ export default function Contact() {
 
           <div className="space-y-6">
             {[
-              { icon: Mail, label: 'Email', value: 'hello@jayesh.dev', href: 'mailto:hello@jayesh.dev' },
-              { icon: Phone, label: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567' },
+              { icon: Mail, label: 'Email', value: 'jayeshy461@gmail.com', href: 'mailto:jayeshy461@gmail.com' },
+              { icon: Phone, label: 'Phone', value: '+91 7004099889', href: 'tel:+917004099889' },
               { icon: MapPin, label: 'Location', value: 'Remote • Worldwide', href: null },
             ].map((item, index) => {
               const Icon = item.icon;
@@ -89,15 +89,15 @@ export default function Contact() {
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                   className="flex items-center gap-4 group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center group-hover:bg-purple-500/20 transition-all duration-300">
-                    <Icon className="w-5 h-5 text-purple-400" />
+                  <div className="w-12 h-12 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center group-hover:bg-blue-500/20 transition-all duration-300">
+                    <Icon className="w-5 h-5 text-blue-400" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">{item.label}</p>
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="text-white hover:text-purple-400 transition-colors"
+                        className="text-white hover:text-blue-400 transition-colors"
                       >
                         {item.value}
                       </a>
@@ -113,13 +113,13 @@ export default function Contact() {
           {/* Quick Stats */}
           <div className="grid grid-cols-2 gap-4 pt-8 border-t border-purple-500/10">
             <div className="text-center p-4 glass rounded-lg">
-              <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-1">
+              <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent mb-1">
                 24h
               </div>
               <div className="text-xs text-gray-500">Response Time</div>
             </div>
             <div className="text-center p-4 glass rounded-lg">
-              <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-1">
+              <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent mb-1">
                 100%
               </div>
               <div className="text-xs text-gray-500">Satisfaction Rate</div>
@@ -133,7 +133,7 @@ export default function Contact() {
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
           onSubmit={handleSubmit}
-          className="glass rounded-2xl p-8 border border-purple-500/10"
+          className="glass rounded-2xl p-8 border border-blue-500/10"
         >
           <div className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -222,7 +222,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-2 group"
+              className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-2 group"
             >
               Send Message
               <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

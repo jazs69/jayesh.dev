@@ -24,11 +24,12 @@ module.exports = {
           950: "#082f49",
         },
         accent: {
-          cyan: "#00d9ff",
-          purple: "#c084fc",
-          pink: "#f472b6",
-          gold: "#fbbf24",
-          magenta: "#e879f9",
+          cyan: "#60a5fa",
+          purple: "#8b5cf6",
+          pink: "#ec4899",
+          gold: "#d4af37",
+          slate: "#64748b",
+          navy: "#1e293b",
         },
         dark: {
           bg: "#0a0a0f",
