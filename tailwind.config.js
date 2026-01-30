@@ -25,9 +25,10 @@ module.exports = {
         },
         accent: {
           cyan: "#00d9ff",
-          purple: "#a78bfa",
+          purple: "#c084fc",
           pink: "#f472b6",
           gold: "#fbbf24",
+          magenta: "#e879f9",
         },
         dark: {
           bg: "#0a0a0f",
