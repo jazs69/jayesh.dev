@@ -73,7 +73,7 @@ export default function Projects({ limit, showMoreButton = false }: ProjectsProp
           </Link>
         )}
         {!showMoreButton && (
-          <a href="#contact" className="btn-primary inline-block">
+          <a href="/#contact" className="btn-primary inline-block">
             Let's Build Your Next Success Story
           </a>
         )}

@@ -6,11 +6,11 @@ import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 
 const navLinks = [
-  { name: 'About', href: '#home' },
-  { name: 'Services', href: '#services' },
-  { name: 'Portfolio', href: '#projects' },
-  { name: 'Process', href: '#process' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'About', href: '/#home' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Portfolio', href: '/#projects' },
+  { name: 'Process', href: '/#process' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
@@ -41,7 +41,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <motion.a
-            href="#home"
+            href="/"
             className="flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -75,7 +75,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <motion.a
-            href="#contact"
+            href="/#contact"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -116,7 +116,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-semibold text-center hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
               >
