@@ -78,4 +78,25 @@ export const projectsData: Project[] = [
     technologies: ['Next.js', 'MDX', 'Contentful', 'Google Search Console', 'Vercel'],
     link: 'https://example.com',
   },
+  {
+    id: 'shubh-shaleen-springs',
+    title: 'Shubh Shaleen Springs Hotel',
+    category: 'Full-Stack Development',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+    businessProblem: 'A boutique hotel in Bhopal needed a modern online presence with an integrated booking system to reduce dependency on third-party platforms and capture direct bookings.',
+    technicalSolution: [
+      'Developed a responsive hotel website with real-time room availability',
+      'Integrated booking engine with check-in/check-out date selection',
+      'Implemented dynamic pricing and special code functionality',
+      'Built an interactive image gallery and WhatsApp integration for instant queries',
+    ],
+    results: [
+      { metric: 'Direct Bookings', value: '+245%', description: 'increase' },
+      { metric: 'Page Load', value: '1.2s', description: 'average time' },
+      { metric: 'Mobile Traffic', value: '68%', description: 'of visitors' },
+      { metric: 'User Engagement', value: '+156%', description: 'time on site' },
+    ],
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'MongoDB'],
+    link: 'https://www.shubhshaleensprings.com/',
+  },
 ];
