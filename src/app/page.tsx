@@ -17,7 +17,7 @@ export default function Home() {
         <TrustBar />
         <Services />
         <Metrics />
-        <Projects />
+        <Projects limit={3} showMoreButton={true} />
         <ProcessRoadmap />
         <Contact />
       </main>

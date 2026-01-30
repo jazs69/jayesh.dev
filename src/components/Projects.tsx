@@ -4,12 +4,20 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ProjectCard from './ProjectCard';
 import { projectsData, type Project } from '@/data/projects';
+import Link from 'next/link';
 
-export default function Projects() {
+interface ProjectsProps {
+  limit?: number;
+  showMoreButton?: boolean;
+}
+
+export default function Projects({ limit, showMoreButton = false }: ProjectsProps) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  const displayedProjects = limit ? projectsData.slice(0, limit) : projectsData;
 
   const headerVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -47,7 +55,7 @@ export default function Projects() {
 
       {/* Dynamic Project Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 relative z-10">
-        {projectsData.map((project: Project, index: number) => (
+        {displayedProjects.map((project: Project, index: number) => (
           <ProjectCard key={project.id} project={project} index={index} />
         ))}
       </div>
@@ -57,11 +65,18 @@ export default function Projects() {
         variants={headerVariants}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
-        className="text-center mt-16"
+        className="text-center mt-16 space-y-4"
       >
-        <a href="#contact" className="btn-primary inline-block">
-          Let's Build Your Next Success Story
-        </a>
+        {showMoreButton && (
+          <Link href="/portfolio" className="btn-primary inline-block">
+            See More Projects
+          </Link>
+        )}
+        {!showMoreButton && (
+          <a href="#contact" className="btn-primary inline-block">
+            Let's Build Your Next Success Story
+          </a>
+        )}
       </motion.div>
     </section>
   );

@@ -82,7 +82,7 @@ export const projectsData: Project[] = [
     id: 'shubh-shaleen-springs',
     title: 'Shubh Shaleen Springs Hotel',
     category: 'Full-Stack Development',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+    image: 'https://res.cloudinary.com/dldgk0q6n/image/upload/v1769810800/Screenshot_2026-01-31_033540_yrw0jj.png',
     businessProblem: 'A boutique hotel in Bhopal needed a modern online presence with an integrated booking system to reduce dependency on third-party platforms and capture direct bookings.',
     technicalSolution: [
       'Developed a responsive hotel website with real-time room availability',
